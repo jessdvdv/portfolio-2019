@@ -39,7 +39,7 @@
 				// I would request you keep a link back to WPExplorer.com to show your appreciation
 				// Of course this is 100% optional - thanks!
 				else : ?>
-					WordPress Theme by <a href="http://www.wpexplorer.com/adapt-free-responsive-wordpress-theme/" title="Adapt Wordpress Theme" target="_blank">WPExplorer</a> Powered by <a href="https://wordpress.org/" title="WordPress" target="_blank">WordPress</a>
+					&#169; 2019 Jessica Weber
 				<?php endif; ?>
 			</div><!-- /copyright -->
 			<div id="back-to-top">

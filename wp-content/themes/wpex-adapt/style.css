@@ -447,6 +447,13 @@ div.wpcf7-mail-sent-ng { margin: 0; padding: 10px; background: #ffe9e9; color: #
 #footer #subscribe-blog #subscribe-field { background: #444; border: 1px solid #2b2b2b; }
 #footer #subscribe-blog #subscribe-field:focus { background-color: #555; color: #fff; }
 
+.resume-download-btn-container{
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #555555;
+}
+
 /*------------------------------------------------------------------
 [Footer]
 -------------------------------------------------------------------*/
