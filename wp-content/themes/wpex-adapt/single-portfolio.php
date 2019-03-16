@@ -11,7 +11,14 @@
 get_header();
 
 // Main post loop
-while ( have_posts() ) : the_post(); ?>
+while ( have_posts() ) : the_post(); 
+	$client = get_field('client');
+	$services = get_field('services');
+	$technical_skills = get_field('technical_skills');
+	$website_link = get_field('website_link');
+	$source_code = get_field('source_code');?>
+
+
 
 	<article>
 
@@ -74,7 +81,19 @@ while ( have_posts() ) : the_post(); ?>
 			</div><!-- /single-portfolio-left -->
 
 			<div id="single-portfolio-right" class="clearfix">
+
+				<h5>Client: <?php echo $client; ?></h5>	
+				<h5>Services: <?php echo $services; ?></h5>
+				<h5>Technical skills: <?php echo $technical_skills; ?></h5>
+
 				<?php the_content(); ?>
+				
+
+				<p><a href="<?php echo $website_link; ?>" target="_blank">Site Link</a> 
+				<?php if( get_field('source_code') ): ?>
+				& <a href="<?php echo $source_code; ?>" target="_blank">Source Code</a></p>
+				<?php endif; ?>
+
 			</div><!-- #single-portfolio-right -->
 
 		</div><!-- #post -->
