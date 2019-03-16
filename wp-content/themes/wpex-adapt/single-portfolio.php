@@ -82,16 +82,18 @@ while ( have_posts() ) : the_post();
 
 			<div id="single-portfolio-right" class="clearfix">
 
-				<h5>Client: <?php echo $client; ?></h5>	
-				<h5>Services: <?php echo $services; ?></h5>
-				<h5>Technical skills: <?php echo $technical_skills; ?></h5>
+				<div class="portfolio-details">
+					<h5><strong>Client:</strong> <?php echo $client; ?></h5>	
+					<h5><strong>Services:</strong> <?php echo $services; ?></h5>
+					<h5><strong>Technical skills:</strong> <?php echo $technical_skills; ?></h5>
+				</div>
 
 				<?php the_content(); ?>
 				
 
-				<p><a href="<?php echo $website_link; ?>" target="_blank">Site Link</a> 
+				<p class="portfolio-links"><a href="<?php echo $website_link; ?>" target="_blank"><strong>Site Link</strong></a> 
 				<?php if( get_field('source_code') ): ?>
-				& <a href="<?php echo $source_code; ?>" target="_blank">Source Code</a></p>
+				& <a href="<?php echo $source_code; ?>" target="_blank"><strong>Source Code</strong></a></p>
 				<?php endif; ?>
 
 			</div><!-- #single-portfolio-right -->
